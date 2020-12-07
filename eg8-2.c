@@ -11,5 +11,7 @@ int main()
     printf("a=%d,*P=%d\n",a,*p);
     (*p)++;
     printf("a=%d,*p=%d\n",a,*p);
+    *p++;
+    printf("a=%d,*p=%d\n",a,*p);
     return 0;
 }
