@@ -17,6 +17,7 @@ int main()
     return 0;
 }
 void f(int a[],int n)
+//void f(int *a,int n)
 {
     int i,t,j;
     for(i=0;i<n-1;i++)

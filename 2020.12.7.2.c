@@ -17,20 +17,24 @@ int main()
 /* Your function will be put here */
 void StringCount(char *s)
 {
-    int zm = 0, kg = 0, sz = 0, qt = 0, xxzm = 0;
-    while (*S != '\0')
+    int i= 0,zm = 0, kg = 0, sz = 0, qt = 0, xxzm = 0;
+    while (s[i] != '\0')
     {
-        if (*s >= 'A' && *s <= 'Z')
+        if (s[i] >= 'A' && s[i] <= 'Z')
             zm++;
-        else if (*s >= 'a' && *s <= 'z')
+        else if (s[i] >= 'a' && s[i] <= 'z')
             xxzm++;
-        else if (*s == ' ')
+        else if (s[i] == ' ')
             kg++;
-        else if (*s >= '0' && *s <= '9')
+        else if (s[i] >= '0' && s[i] <= '9')
             sz++;
         else
             qt++;
-        s++;
+        i++;
     }
     printf("%d %d %d %d %d", zm, xxzm, kg, sz, qt);
+}
+void ReadString(char *s)
+{
+    gets(s);
 }
