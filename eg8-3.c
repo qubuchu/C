@@ -11,6 +11,7 @@ int main()
     x=10,y=20;
     swap2(px,py);
     printf("x=%d,y=%d\n",x,y);
+    printf("*px=%d,*py=%d\n",*px,*py);
     x=10,y=20;
     printf("x=%d,y=%d\n",px,py);
     swap3(px,py);
